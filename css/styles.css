@@ -10,9 +10,9 @@
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
-    --acent-color: #2196F3;
+    --accent-color: #2196F3;
     --primary-white-color: #ffffff;
-    --primay-grey-color: #2F303A;
+    --primary-grey-color: #2F303A;
     --address-link-color: rgba(255, 255, 255, 0.6);
     --examples-button-color: #F5F4FA;
 }
@@ -31,22 +31,28 @@ ul {
     list-style: none;
 }
 
-a {
+.menu-item {
+    color: var(--title-text-color);
     text-decoration: none;
 }
 
+.menu-item:hover,
+.menu-item:focus {
+    color: var(--accent-color);
+}
 /* logo */
-.logo {
-    color: var(--acent-color);
+.web {
+    color: var(--accent-color);
+}
+
+.logo{
+    color: var(--title-text-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-}
-
-.logo .studio {
-    color: var(--title-text-color);
+    text-decoration: none;
 }
 
 .logo .studio-footer {
@@ -54,40 +60,46 @@ a {
 }
 
 /* site-nav */
-.site-nav .link {
+.site-nav {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+
+.site-nav >.link.current {
     color: var(--acent-color);
 }
-
-.site-nav .link.current {
-    color: var(--acent-color);
+.site-nav {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    }
 }
 
 /* contacts */ 
-.contacts .link {
+.contact {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
-    color: var(--acent-color);
+.contact:hover,
+.contact:focus {
+    color: var(--accent-color);
 }
 
 /* hero */
 .hero {
-    background-color: var(--primay-grey-color);
+    background-color: var(--primary-grey-color);
 }
 
 .hero .title {
@@ -102,7 +114,7 @@ a {
 }
 
 .hero .btn {
-    background-color: var(--acent-color);
+    background-color: var(--accent-color);
     color: var(--primary-white-color);
     font-weight: 700;
     font-size: 16px;
@@ -151,10 +163,20 @@ a {
     line-height: 1.19;
     text-align: center;
 }
+.command {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+}
 
 /* footer */
+.address {
+    font-style: normal;
+}
 .footer {
-    background-color: var(--primay-grey-color);
+    background-color: var(--primary-grey-color);
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-style: normal;
@@ -193,7 +215,7 @@ a {
 
 .examples-button .btn:hover,
 .examples-button .btn:focus {
-    background-color: var(--acent-color);
+    background-color: var(--accent-color);
     color: var(--primary-white-color);
     cursor: pointer;
 }
