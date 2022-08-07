@@ -1,4 +1,4 @@
-/* Цвет фона #ffffff */
+/* Цвет фона #FFFFFF */
 /* Цвет фона героя и футера #2F303A */
 /* Цвет фона "Наша команда" #F5F4FA */
 /* Цвет основного текста #757575 */
@@ -163,6 +163,7 @@ a {
 .address .link {
     color: var(--address-link-color);
     font-style: normal;
+    text-decoration: none;
 }
 
 .address .city {
