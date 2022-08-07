@@ -169,3 +169,43 @@ a {
     color: var(--primary-white-color);
     font-style: normal;
 }
+
+/* Портфоліо */
+.portfolio-section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.examples-button .btn {
+    background-color: var(--examples-button-color);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.examples-button .btn:hover,
+.examples-button .btn:focus {
+    background-color: var(--acent-color);
+    color: var(--primary-white-color);
+    cursor: pointer;
+}
+
+.examples .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.examples .text {
+    font-size: 16px;
+    line-height: 1.88;
+}
